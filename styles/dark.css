@@ -6,33 +6,8 @@
   --content-title-color: #000028;
   --title-background-color: #ff0070;
   --text-color: #f1b2ce;
+  --outline-color: rgba(255, 0, 112, 0.4);
   background-image: url(../images/cover-image-dark.png);
-}
-
-.theme_dark .header__decoration::before {
-  content: "REC";
-  visibility: visible;
-  color: #ff0070;
-  font-family: var(--main-font, sans-serif);
-  font-weight: var(--text-fontweight);
-  font-size: var(--main-fontsize);
-  line-height: 25px;
-  text-align: center;
-}
-
-.theme_dark .header__decoration::after {
-  content: "";
-  visibility: visible;
-  display: inline-block;
-  border-radius: 35%;
-  box-shadow: 0 0 4px #ff0070;
-  background-color: #ff0070;
-  inline-size: 9px;
-  block-size: 9px;
-}
-
-.theme_dark .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,32 +19,7 @@
     --content-title-color: #000028;
     --title-background-color: #ff0070;
     --text-color: #f1b2ce;
+    --outline-color: rgba(255, 0, 112, 0.4);
     background-image: url(../images/cover-image-dark.png);
-  }
-
-  .header__decoration::before {
-    content: "REC";
-    visibility: visible;
-    color: #ff0070;
-    font-family: var(--main-font, sans-serif);
-    font-weight: var(--text-fontweight);
-    font-size: var(--main-fontsize);
-    line-height: 25px;
-    text-align: center;
-  }
-
-  .header__decoration::after {
-    content: "";
-    visibility: visible;
-    display: inline-block;
-    border-radius: 35%;
-    box-shadow: 0 0 4px #ff0070;
-    background-color: #ff0070;
-    inline-size: 9px;
-    block-size: 9px;
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(255, 0, 112, 0.4);
   }
 }

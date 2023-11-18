@@ -5,9 +5,12 @@
   --title-shadow-color: #ff0070;
   --content-title-color: #000028;
   --title-background-color: #ff0070;
+  --outline-color: rgba(255, 0, 112, 0.4);
   --text-color: #f1b2ce;
   --main-font: "IBM Plex mono";
   --main-fontsize: 18px;
+  --title-fontsize: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-fontsize-bigres: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-gap: 10px;
   --accent-gap: 20px;
   --title-fontweight: 700;

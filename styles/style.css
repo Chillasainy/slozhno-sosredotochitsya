@@ -5,6 +5,7 @@
   font-family: var(--main-font, sans-serif);
   font-weight: var(--text-fontweight, 400);
   font-size: var(--main-fontsize, 18px);
+  background-color: var(--bg-color);
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -19,11 +20,12 @@
   justify-items: end;
   align-items: center;
   max-width: 100%;
+  min-height: 668px;
   padding: var(--main-gap) 0px;
   block-size: 100vh;
 }
 
-.header.decorated-zone::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   border-inline-end: 1px solid var(--title-color);
@@ -31,9 +33,10 @@
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 10px;
+  inset-inline-end: 0px;
 }
 
-.header.decorated-zone::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   border-inline-start: 1px solid var(--title-color);
@@ -54,7 +57,7 @@
 }
 
 .header__decoration::before {
-  content: "REC";
+  content: "rec";
   visibility: visible;
   color: #ff0070;
   font-family: var(--main-font, sans-serif);
@@ -62,6 +65,7 @@
   font-size: var(--main-fontsize);
   line-height: 25px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header__decoration::after {
@@ -69,7 +73,7 @@
   visibility: visible;
   display: inline-block;
   border-radius: 35%;
-  box-shadow: 0 0 4px #ff0070;
+  box-shadow: 0 0 4px 2px var(--title-color);
   background-color: #ff0070;
   inline-size: 9px;
   block-size: 9px;
@@ -91,6 +95,7 @@
   padding: 0px 13px 4px;
   color: var(--title-color);
   line-height: 100%;
+  text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
 }
@@ -101,7 +106,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--outline-color);
 }
 
 .header__theme-menu-button:focus {
@@ -115,7 +120,7 @@
 .header__title {
   color: var(--main-title-color);
   font-weight: var(--title-fontweight);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-fontsize);
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--title-shadow-color);
 }
@@ -162,6 +167,10 @@
   gap: var(--main-gap);
 }
 
+.list-item-title-special.title-decor {
+  font-weight: 400;
+}
+
 .list-item-text {
   font-weight: var(--text-fontweight);
   font-size: var(--main-fontsize);
@@ -192,8 +201,8 @@
 }
 
 .picture__section-list-item {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 .picture__section-list {
@@ -214,36 +223,15 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 668px;
   padding: var(--main-gap) 0px;
-}
-
-.footer.decorated-zone::before {
-  content: "";
-  position: absolute;
-  border-inline-end: 1px solid var(--title-color);
-  border-block-start: 1px solid var(--title-color);
-  inline-size: 25px;
-  block-size: 25px;
-  inset-block-start: 10px;
-  inset-inline-end: 0px;
-}
-
-.footer.decorated-zone::after {
-  content: "";
-  position: absolute;
-  border-inline-start: 1px solid var(--title-color);
-  border-block-end: 1px solid var(--title-color);
-  inline-size: 25px;
-  block-size: 25px;
-  inset-block-end: 10px;
-  inset-inline-start: 0px;
+  block-size: 100vh;
 }
 
 .footer__title {
   color: var(--main-title-color);
   font-weight: var(--title-fontweight);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-fontsize);
   line-height: 82.5%;
   text-shadow: 2px 2px 0px var(--title-shadow-color);
 }
@@ -280,6 +268,10 @@
     grid-template-rows: auto;
   }
 
+  .content__section-list {
+    grid-column-start: 2;
+  }
+
   .page {
     padding: 0px var(--accent-gap);
   }
@@ -312,7 +304,7 @@
 
   .header__title {
     justify-self: start;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--title-fontsize-bigres);
     transform: translate(-20px, 0px);
   }
 
@@ -334,7 +326,7 @@
     inset-block-end: 20px;
   }
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--title-fontsize-bigres);
   }
 }
 
