@@ -193,15 +193,12 @@
 
 .picture__section-list-item {
   max-width: 100%;
+  display: block;
 }
 
 .picture__section-list {
   display: grid;
   gap: var(--main-gap);
-}
-
-.picture__section-list-item {
-  display: block;
 }
 
 .picture {
