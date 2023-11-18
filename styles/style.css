@@ -2,7 +2,7 @@
   max-width: 1024px;
   padding: 0px var(--main-gap);
   color: var(--text-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: var(--text-fontweight, 400);
   font-size: var(--main-fontsize, 18px);
   background-color: var(--bg-color);
@@ -60,7 +60,7 @@
   content: "rec";
   visibility: visible;
   color: #ff0070;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: var(--text-fontweight);
   font-size: var(--main-fontsize);
   line-height: 25px;
