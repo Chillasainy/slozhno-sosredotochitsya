@@ -9,34 +9,34 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.theme_dark .header__decoration::before{
+.theme_dark .header__decoration::before {
   content: "REC";
-  text-align: center;
-  font-size: var(--main-fontsize);
-  color: #FF0070;
-  line-height: 25px;
-  font-weight: var(--text-fontweight);
-  font-family: var(--main-font, sans-serif);
   visibility: visible;
+  color: #ff0070;
+  font-family: var(--main-font, sans-serif);
+  font-weight: var(--text-fontweight);
+  font-size: var(--main-fontsize);
+  line-height: 25px;
+  text-align: center;
 }
 
-.theme_dark .header__decoration::after{
+.theme_dark .header__decoration::after {
   content: "";
+  visibility: visible;
   display: inline-block;
+  border-radius: 35%;
   box-shadow: 0 0 4px #ff0070;
   background-color: #ff0070;
-  border-radius: 35%;
   inline-size: 9px;
   block-size: 9px;
-  visibility: visible;
 }
 
-.theme_dark .header__theme-menu-button:hover{
-  outline: 1px solid rgba(255, 0, 112, 0.40);
+.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-@media (prefers-color-scheme: dark){
-  .page{
+@media (prefers-color-scheme: dark) {
+  .page {
     --bg-color: #000028;
     --title-color: #ff0070;
     --main-title-color: #db00ff;
@@ -46,30 +46,30 @@
     --text-color: #f1b2ce;
     background-image: url(../images/cover-image-dark.png);
   }
-  
-  .header__decoration::before{
+
+  .header__decoration::before {
     content: "REC";
-    text-align: center;
-    font-size: var(--main-fontsize);
-    color: #FF0070;
-    line-height: 25px;
-    font-weight: var(--text-fontweight);
+    visibility: visible;
+    color: #ff0070;
     font-family: var(--main-font, sans-serif);
-    visibility: visible;
-  }
-  
-  .header__decoration::after{
-    content: "";
-    display: inline-block;
-    box-shadow: 0 0 4px #ff0070;
-    background-color: #ff0070;
-    border-radius: 35%;
-    inline-size: 9px;
-    block-size: 9px;
-    visibility: visible;
+    font-weight: var(--text-fontweight);
+    font-size: var(--main-fontsize);
+    line-height: 25px;
+    text-align: center;
   }
 
-  .header__theme-menu-button:hover{
-    outline: 1px solid rgba(255, 0, 112, 0.40);
+  .header__decoration::after {
+    content: "";
+    visibility: visible;
+    display: inline-block;
+    border-radius: 35%;
+    box-shadow: 0 0 4px #ff0070;
+    background-color: #ff0070;
+    inline-size: 9px;
+    block-size: 9px;
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(255, 0, 112, 0.4);
   }
 }

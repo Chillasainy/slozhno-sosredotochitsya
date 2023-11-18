@@ -1,4 +1,4 @@
-:root{
+:root {
   --bg-color: #000028;
   --title-color: #ff0070;
   --main-title-color: #db00ff;
@@ -6,13 +6,10 @@
   --content-title-color: #000028;
   --title-background-color: #ff0070;
   --text-color: #f1b2ce;
-  --main-font: 'IBM Plex mono';
+  --main-font: "IBM Plex mono";
   --main-fontsize: 18px;
   --main-gap: 10px;
   --accent-gap: 20px;
   --title-fontweight: 700;
   --text-fontweight: 400;
 }
-
-
-
