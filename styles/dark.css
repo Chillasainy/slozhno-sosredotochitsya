@@ -1,12 +1,75 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #000028;
+  --title-color: #ff0070;
+  --main-title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --content-title-color: #000028;
+  --title-background-color: #ff0070;
+  --text-color: #f1b2ce;
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__decoration::before{
+  content: "REC";
+  text-align: center;
+  font-size: var(--main-fontsize);
+  color: #FF0070;
+  line-height: 25px;
+  font-weight: var(--text-fontweight);
+  font-family: var(--main-font, sans-serif);
+  visibility: visible;
+}
+
+.theme_dark .header__decoration::after{
+  content: "";
+  display: inline-block;
+  box-shadow: 0 0 4px #ff0070;
+  background-color: #ff0070;
+  border-radius: 35%;
+  inline-size: 9px;
+  block-size: 9px;
+  visibility: visible;
+}
+
+.theme_dark .header__theme-menu-button:hover{
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+@media (prefers-color-scheme: dark){
+  .page{
+    --bg-color: #000028;
+    --title-color: #ff0070;
+    --main-title-color: #db00ff;
+    --title-shadow-color: #ff0070;
+    --content-title-color: #000028;
+    --title-background-color: #ff0070;
+    --text-color: #f1b2ce;
+    background-image: url(../images/cover-image-dark.png);
+  }
+  
+  .header__decoration::before{
+    content: "REC";
+    text-align: center;
+    font-size: var(--main-fontsize);
+    color: #FF0070;
+    line-height: 25px;
+    font-weight: var(--text-fontweight);
+    font-family: var(--main-font, sans-serif);
+    visibility: visible;
+  }
+  
+  .header__decoration::after{
+    content: "";
+    display: inline-block;
+    box-shadow: 0 0 4px #ff0070;
+    background-color: #ff0070;
+    border-radius: 35%;
+    inline-size: 9px;
+    block-size: 9px;
+    visibility: visible;
+  }
+
+  .header__theme-menu-button:hover{
+    outline: 1px solid rgba(255, 0, 112, 0.40);
+  }
 }
