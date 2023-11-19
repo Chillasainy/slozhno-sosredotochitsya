@@ -7,6 +7,7 @@
   --title-background-color: #ff0070;
   --text-color: #f1b2ce;
   --outline-color: rgba(255, 0, 112, 0.4);
+  --visible-decor: visible;
   background-image: url(../images/cover-image-dark.png);
 }
 
@@ -20,6 +21,7 @@
     --title-background-color: #ff0070;
     --text-color: #f1b2ce;
     --outline-color: rgba(255, 0, 112, 0.4);
+    --visible-decor: visible;
     background-image: url(../images/cover-image-dark.png);
   }
 }
